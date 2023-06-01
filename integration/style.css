@@ -60,6 +60,7 @@ main {
 }
 .aboutcontenu img {
   width: 80%;
+  filter: grayscale(60%);
 }
 .textabout {
   font-family: "satoshi";
