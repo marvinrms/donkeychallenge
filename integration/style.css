@@ -1,3 +1,10 @@
+@media (prefere-color-scheme: dark) {
+  :root {
+    --body-background-color: #222;
+    --body-text-color: #fff;
+  }
+}
+
 @font-face {
   font-family: "barakuda";
   src: url(./font/Barracuda\ Bold\ Regular.ttf) format(truetype);
@@ -5,8 +12,23 @@
   src: url(./font/Satoshi-Regular.ttf) format(truetype);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+body img {
+  border-radius: 3px;
+  opacity: 1;
+}
+.body img:hover {
+  opacity: 0.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .contentnav {
-  padding: 20px 30px 20px 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -15,11 +37,10 @@
 }
 .contentnav a {
   text-decoration: none;
-  font-weight: 400;
+  margin: 0px 20px;
   color: black;
   font-family: "barakuda";
   font-size: 15px;
-  margin: 0px 20px;
 }
 nav {
   position: fixed;
@@ -30,13 +51,16 @@ nav {
   width: 60px;
 }
 
+main {
+  padding: 20px;
+}
 .namejob {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   color: black;
   font-family: "barakuda";
-  padding: 200px 50px 70px 50px;
+  padding: 20px;
 }
 h1 {
   font-size: 50px;
@@ -49,81 +73,55 @@ h3 {
   font-size: 30px;
   font-family: "barakuda";
 }
-main {
-  padding: 40px;
-}
 
 .aboutcontenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 50px;
 }
 .aboutcontenu img {
-  width: 80%;
   filter: grayscale(60%);
+  width: 100%;
 }
 .textabout {
   font-family: "satoshi";
-  font-size: 30px;
-  width: 50%;
-  margin-top: 50px;
+  font-size: 20px;
 }
 .imagecontenu img {
-  width: 80%;
+  max-width: 100%;
   object-fit: cover;
 }
 .projectcontent {
-  display: grid;
-  grid-template-columns: auto auto auto;
-
-  justify-content: space-between;
 }
 
-.projet {
-  display: flex;
-  flex-direction: column;
+.projet,
+.article {
+  margin-top: 50px;
 }
+
 .projet img,
 .article img {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
   border-radius: 3px;
-}
-.projet img:hover {
-  opacity: 0.5;
+  width: 100%;
 }
 
 .button1 {
   width: 30%;
 }
-.skillscontenu,
-.articlescontenu {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-.skillsdev,
-.article {
-  display: flex;
-  flex-direction: column;
-}
 
-.skillsdev img {
-  width: 200px;
+.skills img {
+  width: 100%;
 
   opacity: 1;
   border-radius: 3px;
 }
 
 .button2 {
-  width: 70px;
+  width: 20%;
 }
 
 .button3 {
-  width: 20%;
+  width: 30%;
 }
 main button {
-  display: flex;
   background-color: gray;
   border-radius: 60px;
   font-family: "barakuda";
@@ -136,7 +134,6 @@ main button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0px 0px 200px;
 }
 .logocontact li {
   list-style-type: none;
@@ -146,47 +143,38 @@ main button {
   width: 25%;
 }
 form {
+  font-size: 30px;
+  font-family: "barakuda";
   display: flex;
 
   flex-direction: column;
   margin-top: 70px;
   font-size: 30px;
   font-family: "barakuda";
-
 }
 
-.name , .mail {
- 
+.name,
+.mail {
   width: 30%;
 }
-  .message {
-    height: 100px;
-width: 70%;
-  }
-
+.message { 
+  height: 100px;
+  width: 70%;
+}
 
 
 .navtexte {
-  
-    padding: 20px 30px 20px 70px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  
-  }
+}
 
-
-  footer a {
-    text-decoration: none;
-    font-weight: 400;
-    color: black;
-    font-family: "barakuda";
-    font-size: 15px;
-    margin: 0px 20px;
-    font-size: 30px;
-  } 
+footer a {
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  font-family: "barakuda";
+  font-size: 15px;
+  margin: 0px 20px;
+  font-size: 30px;
+}
 footer p {
-
   text-align: center;
 }
