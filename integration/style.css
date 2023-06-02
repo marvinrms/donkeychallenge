@@ -1,41 +1,19 @@
-@media (prefere-color-scheme: dark) {
-  :root {
-    --body-background-color: #222;
-    --body-text-color: #fff;
-  }
-}
-
 @font-face {
   font-family: "barakuda";
   src: url(./font/Barracuda\ Bold\ Regular.ttf) format(truetype);
   font-family: "satoshi";
   src: url(./font/Satoshi-Regular.ttf) format(truetype);
 }
-@media screen and (max-width:600px) { 
-main {
-  background-color: #000;
-  color: #fff;
-}
-@media screen and (max-width:600px) { 
-  .contentnav ,header {
-    background-color: gray;
-    color: #fff;}
-    footer {
-      background-color: gray;
-      color: #fff;}
-  }}
-
- 
-  
-
 
 body {
   margin: 0;
   padding: 0;
 }
+
 body img {
   border-radius: 3px;
   opacity: 1;
+  width: 80%;
 }
 .body img:hover {
   opacity: 0.5;
@@ -45,43 +23,44 @@ body img {
   box-sizing: border-box;
 }
 
-
-
-.contentnav {
+.contentnav  {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  text-align: center;
+  text-align: end;
+  
+ 
 }
+
 .contentnav a {
   text-decoration: none;
   margin: 0px 20px;
   color: black;
   font-family: "barakuda";
   font-size: 15px;
+  width: 80vw;
+
 }
 nav {
   position: fixed;
   width: 100%;
   z-index: 2;
- 
-  
 }
 .logo {
   width: 60px;
 }
 
 main {
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  width: 375px;
 }
 .namejob {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  padding-top: 20%;
+  display: block;
   color: black;
   font-family: "barakuda";
-  padding: 20px;
 }
 h1 {
   font-size: 50px;
@@ -89,6 +68,7 @@ h1 {
 h2 {
   font-size: 40px;
   font-family: "barakuda";
+  padding-top: 20%;
 }
 h3 {
   font-size: 30px;
@@ -110,18 +90,21 @@ h3 {
   max-width: 100%;
   object-fit: cover;
 }
-.projectcontent {
-}
 
 .projet,
 .article {
   margin-top: 50px;
+  padding-bottom: 20px;
 }
 
 .projet img,
 .article img {
   border-radius: 3px;
   width: 100%;
+  height: 100%;
+}
+.projet img:hover {
+  opacity: 0.5;
 }
 
 .button1 {
@@ -136,11 +119,11 @@ h3 {
 }
 
 .button2 {
-  width: 20%;
+  width: 30%;
 }
 
 .button3 {
-  width: 30%;
+  width: 40%;
 }
 main button {
   background-color: gray;
@@ -163,9 +146,9 @@ main button {
 .logocontact img {
   width: 25%;
 }
+.contactcontenu {
+}
 form {
-  font-size: 30px;
-  font-family: "barakuda";
   display: flex;
 
   flex-direction: column;
@@ -178,24 +161,128 @@ form {
 .mail {
   width: 30%;
 }
-.message { 
+.message {
   height: 100px;
   width: 70%;
 }
 
-
-.navtexte {
-}
 
 footer a {
   text-decoration: none;
   font-weight: 400;
   color: black;
   font-family: "barakuda";
-  font-size: 15px;
+  font-size: 10px;
   margin: 0px 20px;
-  font-size: 30px;
+  font-size: 15px;
 }
 footer p {
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  body,
+  header,
+  h1,
+  h2 {
+    background-color: #000;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contentnav,
+  footer {
+    background-color: gray;
+    color: #fff;
+  }
+  .contact img {
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contentnav {
+    padding: 20px 30px 20px 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .contentnav a {
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    font-family: "barakuda";
+    font-size: 15px;
+    margin: 0px 20px;
+  }
+  nav {
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+  }
+  .contentnav {
+    width: 100vw;
+  }
+  .contenctnav a {
+    width: 100vw;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ .textabout {
+  margin: 20px;
+ }
+  .projet,
+  .article,
+  .skillsdev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+    width: 80vw;
+  }
+  .projectcontent,
+  .articlescontenu,
+  .skillscontenu ,
+  .aboutcontenu
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 100vw;
+    
+  }
+  .contactcontenu {
+    width: 100vw;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .name,
+  .mail {
+    width: 40vw;
+  }
+  .message {
+    height: 100px;
+    width: 80vw;
+  }
+  form {
+    width: 100vw;
+    margin: 30px;
+  }
+
+.navtexte2 {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+  .aboutcontenu {
+    align-items: center;
+  }
+ }
