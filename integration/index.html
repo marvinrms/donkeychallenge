@@ -11,21 +11,38 @@
   <body>
     <header>
       <nav>
-        <div class="contentnav">
+        
+       <div class="logo">
+        <a href="index.html">
           <img
             src="./img/output-onlinepngtools(1).png"
             class="logo"
             alt="logo"
-          />
-
-          <div class="navtexte">
-            <a href="#about">About Me</a>
-            <a href="#projets">Projets</a>
-            <a href="#articles">Articles</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-          </div>
+          /></a>
+         
         </div>
+        <label class="burger" for="toggle">☰</label>
+               <input type="checkbox" id="toggle">
+          <div class="contentnav_responsive">
+         <ul>
+          
+           <li> <a href="#about">About Me</a></li>
+          <li>  <a href="#projets">Projets</a></li>
+            <li><a href="#articles">Articles</a></li>
+           <li> <a href="#skills">Skills</a></li>
+           <li> <a href="#contact">Contact</a></li>
+         </ul>
+        </div>
+        <div class="contentnav">
+          <ul>
+           
+            <li> <a href="#about">About Me</a></li>
+           <li>  <a href="#projets">Projets</a></li>
+             <li><a href="#articles">Articles</a></li>
+            <li> <a href="#skills">Skills</a></li>
+            <li> <a href="#contact">Contact</a></li>
+          </ul>
+         </div>
       </nav>
       <section class="namejob">
         <h1>
@@ -143,7 +160,7 @@
 
       <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <div class=contactcontenu>
+       
           <div class="logocontact">
             <a href="mailto:marvinramos.contact@gmail.com">
               <img src="./img/mailimg.png" alt="direction vers mail" />
@@ -159,7 +176,7 @@
               ><img src="./img/25231.png" alt="direction vers GitHub"
             /></a>
           </div>
-        </div>
+        
         <form method="get" action="">
           <label>Nom et Prenom:</label>
           <input type="text" class="name" />
